@@ -24,10 +24,12 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding()
                 HStack {
-                    Image(systemName: "suit.heart.fill")
+                    Image(systemName: "suit.heart.fill") .padding()
                     Image(systemName: "gear")
-                    Image(systemName:"trash.fill")
-                        
+                        .padding()
+                Image(systemName:"trash.fill")
+                        .padding()
+                    
                 }
             }
             .font(.title)
