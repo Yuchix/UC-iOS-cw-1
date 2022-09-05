@@ -12,31 +12,29 @@ struct ContentView: View {
         ZStack {
             Image("Stars")
                 .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
             VStack {
                 Text("Hello,my name is Ali")
-
                     .foregroundColor(.white)
                 Text("Iam 19 years old")
                     .foregroundColor(.white)
-
                     .padding()
                 Text("I love games")
-
                     .foregroundColor(.white)
                     .padding()
                 HStack {
                     Image(systemName: "suit.heart.fill")
-                        .font(.title)
+                    Image(systemName: "gear")
+                    Image(systemName:"trash.fill")
+                        
                 }
             }
             .font(.title)
-            
+
         }
     }
 }
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
